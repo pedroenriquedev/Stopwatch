@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Stop watch</title>
+</head>
+<body>
+    <div class="stopwatch--container">
+        <svg class="clock" viewBox="0 0 100 100">
+            <circle
+            class="inside"
+            stroke-width="1"
+            fill="transparent"
+            r="44"
+            cx="50"
+            cy="50"
+            />
+            <rect class="pointer" width="1" height="46" />
+        </svg>
+        
+        <div class="timer--container">
+            <div class="timer">
+                <span class="timer--element" id="timer-hour">00</span>:
+                <span class="timer--element" id="timer-min">00</span>:
+                <span class="timer--element" id="timer-sec">00</span>
+            </div>
+        </div>
+
+        <div class="control">
+            <button class="control-btn" id="start">Start</button>
+            <button class="control-btn" id="lap">Lap</button>
+            <button class="control-btn" id="stop">stop</button>
+            <button class="control-btn" id="reset">Reset</button>
+        </div>
+
+        <div class="lap--container">
+            
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
